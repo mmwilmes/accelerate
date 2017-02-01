@@ -1,0 +1,128 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Your Name!
+ Author URI:   http://example.com
+ Template:     accelerate-theme
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+@import url("../accelerate-theme/style.css");
+
+.home-page {
+    background: url("./img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+.button {
+    background: none repeat scroll 0 0 #45ac9d;
+}
+
+/* Featured work */
+
+.featured-work{
+    padding-bottom:50px;
+}
+
+.featured-work h4{
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.homepage-featured-work{
+    margin:0px;
+    list-style:none;
+}
+
+.individual-featured-work{
+    display: inline-block;
+}
+
+.individual-featured-work figcaption{
+    text-align:center;
+}
+
+
+
+/* Blog post */
+
+.blog-post {
+	width: 50%;
+}
+
+.blog-post h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+        text-align:left;
+
+}
+
+.blog-post h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+.blog-post .read-more-link {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* case-studies*/
+
+.case-study{
+    display: inline-block;
+    width:100%;
+}
+
+.case-study-sidebar{
+    padding-top:25px;
+    width: 28%;
+    float: left;
+}
+
+.case-study-images{
+    padding-top:25px;
+    width:65%;
+    float: right;
+}
+
+.case-study-services{
+    color: #a6a6a6;
+    font-size: 0.82em;
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    padding-top:15px;
+}
+
+
+/* Top Navigation */
+
+.site-navigation .nav-menu {
+        overflow: auto;
+}
+
+.site-navigation ul li {
+    float: left;
+    margin-left: 30px;
+    padding-top:0px;
+    margin-top:0px;
+}
+
+

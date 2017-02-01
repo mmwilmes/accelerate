@@ -24,5 +24,5 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
-
+  
 <?php get_footer(); ?>
