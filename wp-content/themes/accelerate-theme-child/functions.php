@@ -29,13 +29,38 @@ function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
             'labels' => array(
-                'name' => __( 'Case Studies' ),
-                'singular_name' => __( 'Case Study' )
+            'name' => __( 'Case Studies' ),
+            'singular_name' => __( 'Case Study' )
             ),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+    register_post_type( 'about_sections',
+        array(
+            'labels' => array(
+            'name' => __( 'About sections' ),
+            'singular_name' => __( 'About section' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array( 'slug' => 'about' ),
+        )
+    );
 }
+
 add_action( 'init', 'create_custom_post_types' );
+
+
+// Add a body class if on contact page so can narrow width of page in combination with other page class
+add_filter( 'body_class','accelerate_body_classes' );
+function accelerate_body_classes( $classes ) {
+ 
+  if (is_page('contact') ) {
+    $classes[] = 'contact-form-narrow';
+  }
+    return $classes;
+     
+}
